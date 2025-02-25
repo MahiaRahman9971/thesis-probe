@@ -4,7 +4,7 @@ import { RefObject, useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar'
 import { FaChevronDown } from 'react-icons/fa'
 
-export default function Home() {
+function Home() {
   const progressBarRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -51,9 +51,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
-        {/* Add additional sections here */}
       </main>
     </>
   )
 }
+
+export default Home
